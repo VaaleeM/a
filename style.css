@@ -1,0 +1,474 @@
+/*Estilos Generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-titulo {
+    font-size: 2.4rem;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /*font-family: 'Mochiy Pop One', sans-serif;*/
+}
+.seccion-descripcion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #2c2c2c;
+}
+.seccion-texto {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Video*/
+.video-section {
+    position: relative;
+    height: 84vh;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.9);
+}
+.video-section h1 {
+    font-family: 'Nothing You Could Do', cursive;
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.video-section h2 {
+    font-size: 1.2rem;
+    width: 35rem;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 100;
+}
+#myVideo {
+    margin-top: 20px;
+    position: absolute;
+    zoom: 1%;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+/*Barra Navegacion*/
+.navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #ff9900f3;
+    z-index: 10000;
+    height: 100px;
+}
+.navbar-brand {
+    padding: 0px 30px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+.nav-item {
+    padding: 0px 12px;
+}
+
+/*Sobre nosotros*/
+.sobre-nosotros {
+    display: flex;
+    align-items: self-end;
+    justify-content: self-end;
+
+    margin: 30px 30px 0px 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra difuminada alrededor de la sección */
+    padding: 20px 20px 10px 20px; /* Añade relleno para resaltar el difuminado */
+}
+.sobre-nosotros .row {
+    margin-bottom: 10px;
+}
+.sobre-nosotros .imagen {
+    background-image: url('imagenes/R.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px; /* Ajusta la altura según sea necesario */
+}
+.sobre-nosotros .info {
+    background-color: #ffbc58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+}
+.sobre-nosotros img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.titulo p {
+    margin-bottom: 40px;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto p {
+    margin: 0px 20px;
+    width: 75%;
+}
+
+/*Experiencia*/
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+.experiencia-info {
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.experiencia-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 75%;
+}
+.experiencia-info h4 {
+    font-size: 1rem;
+}
+.experiencia .card {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #6666664d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    font-family: 'Poppins', sans-serif;
+}
+.experiencia .card:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.experiencia i {
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge {
+    margin: 5px;
+}
+
+/*Profesores*/
+.profesores {
+    padding: 10px;
+
+    margin: 10px 30px 30px 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra difuminada alrededor de la sección */
+    padding: 20px; /* Añade relleno para resaltar el difuminado */
+}
+.profesores .carousel {
+    max-width: 1000px;
+}
+.carousel-item {
+    height: 500px;
+}
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profesores-imagen {
+    height: 250px;
+    width: 250px;
+    margin: 10px 10px 20px 10px;
+}
+.profesores-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;;
+}
+.profesores-info {
+    font-weight: bold;
+    text-align: center;
+}
+.profesores-info p {
+    margin-bottom: 0;
+}
+.profesores-footer .cliente {
+    font-size: 1.2rem;
+}
+.profesores-footer .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/*Preguntas Frecuentes*/
+.preguntas {
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;;
+}
+.accordion-item {
+    border: 2px solid #00000091;
+}
+.preguntas .accordion-button {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*Mapa*/
+.map {
+    filter: grayscale(100%) invert(92%) contrast(93%);
+    background-color: #ffffff;
+}
+
+/*Contacto*/
+.contacto {
+    background-color: #d17d00;
+    font-family: 'Poppins', sans-serif;
+}
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+    z-index: 1000;
+}
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: #ffbc58;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 1px white;
+}
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contacto .descripcion {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+.contacto button {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.contacto button i {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+    color: rgb(255, 255, 255);
+}
+
+/*Footer*/
+footer {
+    background-color: #d17d00;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+}
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+.derechos-de-autor {
+    font-size: 15px;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/*Responsivo*/
+@media screen and (max-width: 400px) {
+    .overlay {
+        font-size: 18px;
+    }
+    .overlay i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .video-section {
+        height: 95vh;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .content h1 {
+        font-size: 1.9rem;
+    }
+    .content h2 {
+        width: 85%;
+        font-size: 1.3rem;
+    }
+
+    /*Barra de navegación*/
+    .navbar {
+        margin-top: -900px;
+        margin-bottom: 850px;
+        background-color: transparent;
+        z-index: 9999990;
+    }
+    .navbar-collapse.navbar-collapse {
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ff9900e1; /* Cambia el color de fondo al expandirse en dispositivos móviles */
+    }
+    .navbar-brand {
+        display: none;
+    }
+
+    /*Sobre Nosotros*/
+    .sobre-nosotros {
+        margin: 0;
+        padding: 8px 8px 0 8px;
+    }
+    .texto p {
+        margin: 0px 10px;
+        width: 90%;
+    }
+    .sobre-nosotros .row {
+        margin-bottom: 8px;
+    }
+
+    /*Experiencia*/
+    .experiencia {
+        padding: 40px 20px 60px 20px;
+    }
+    .experiencia-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /*Profesores*/
+    .profesores {
+        margin: 10px 10px 30px 10px;
+    }
+    .profesores .carousel {
+        max-width: 100%;
+    }
+    .profesores-imagen {
+        height: 350px;
+        width: 350px;
+    }
+    .profesores-texto {
+        max-width: 90%;
+    }
+    .carousel-control-prev {
+        margin-left: -20px;
+    }
+    .carousel-control-next {
+        margin-right: -20px;
+    }
+
+    /*Preguntas Frecuentes*/
+    .preguntas h2 {
+        font-size: 2rem;
+    }
+    .preguntas h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    /*footer*/
+    .footer img {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .profesores-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .profesores-texto {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+
+}
