@@ -1,3 +1,12 @@
+/* Transiciones */
+.transicion {
+    opacity: 0; /* Empieza con opacidad 0 */
+    transition: opacity 0.3s ease; /* Aplica una transición de opacidad durante 0.5 segundos */
+}
+.transicion.visible {
+    opacity: 1; /* Cuando la clase "visible" se agrega, la opacidad cambia a 1 */
+}
+
 /*Estilos Generales*/
 section {
     display: flex;

@@ -89,6 +89,23 @@ section {
 .nav-item {
     padding: 0px 12px;
 }
+/*Migas Pan*/
+.migas-pan {
+    width: 80%;
+    border-bottom: #2c2c2c21 0.5px solid;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 40px;
+    height: 40px;
+}
+.migas-pan a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
 
 /*Horarios*/
 .horarios2 {
