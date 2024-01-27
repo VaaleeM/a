@@ -1,3 +1,8 @@
+.seccion-descripcion {
+    font-family: 'Poppins', sans-serif;
+    color: #2c2c2c;
+}
+
 /*Estilos Generales*/
 section {
     display: flex;
@@ -63,6 +68,9 @@ section {
 }
 
 /*Barra Navegacion*/
+.logo-movil {
+    display: none;
+}
 .navbar {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -108,11 +116,27 @@ section {
 }
 
 /*Horarios*/
+.info h3 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    width: 75%;
+}
+h4 {
+    font-size: 1rem;
+}
+.info {
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .horarios2 {
     display: none;
 }
 .horarios1 {
-    margin: 70px 0;
+    margin: 10px 10px;
 }
 table {
     font-family: 'Poppins', sans-serif;
@@ -248,7 +272,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 30px 0;
+        margin: 10px 0;
     }
     .video-section {
         height: 95vh;
@@ -265,6 +289,9 @@ footer {
     }
 
     /*Barra de navegación*/
+    .logo-movil {
+        display: block;
+    }
     .navbar {
         margin-top: -900px;
         margin-bottom: 850px;
@@ -280,7 +307,16 @@ footer {
     .navbar-brand {
         display: none;
     }
+    .migas-pan {
+        margin-top: -40px;
+    }
 
+    .info {
+        width: 100%;
+    }
+    .info h3 {
+        font-size: 2rem;
+    }
     /*footer*/
     .footer img {
         margin-top: 40px;

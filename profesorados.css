@@ -63,6 +63,9 @@ section {
 }
 
 /*Barra Navegacion*/
+.logo-movil {
+    display: none;
+}
 .navbar {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -108,13 +111,56 @@ section {
 }
 
 /*Profesorados*/
+.title {
+    margin-bottom: 10px;
+}
+.badges-contenedor {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.badge {
+    margin: 5px;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 75%;
+}
+h4 {
+    font-size: 1rem;
+}
+.info {
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .profesorados {
-    margin: 70px 0;
+    margin: 10px 30px 50px 30px;
+    font-family: 'Poppins', sans-serif;
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        width: 75%;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1rem;
+    }
 }
 .profesorados .card {
     box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
 }
 
+.profesorados .card:hover {
+    transform: scale(1.02);
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+    transition: all 0.5s ease-out;
+    background-color: #dfdfdf;
+}
 
 /*Mapa*/
 .map {
@@ -235,6 +281,9 @@ footer {
     }
 
     /*Barra de navegación*/
+    .logo-movil {
+        display: block;
+    }
     .navbar {
         margin-top: -900px;
         margin-bottom: 850px;
@@ -249,6 +298,9 @@ footer {
     }
     .navbar-brand {
         display: none;
+    }
+    .migas-pan {
+        margin-top: -40px;
     }
 
     /*footer*/

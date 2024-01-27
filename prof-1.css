@@ -63,6 +63,9 @@ section {
 }
 
 /*Barra Navegacion*/
+.logo-movil {
+    display: none;
+}
 .navbar {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -232,6 +235,9 @@ footer {
     }
 
     /*Barra de navegación*/
+    .logo-movil {
+        display: block;
+    }
     .navbar {
         margin-top: -900px;
         margin-bottom: 850px;
@@ -246,6 +252,9 @@ footer {
     }
     .navbar-brand {
         display: none;
+    }
+    .migas-pan {
+        margin-top: -40px;
     }
 
     /*footer*/

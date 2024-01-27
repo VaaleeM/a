@@ -1,3 +1,9 @@
+/*
+https://centroanandayoga.com.ar/
+https://www.gaia.com/es/lp/ritual-yoga-matutino?utm_source=bing&utm_medium=cpc&utm_campaign=1-SPANISH-SEARCH-INTL-YOGA&utm_content=yoga-exact&utm_source=bing+search+paid&utm_medium=cpc&utm_campaign=IA-SPANISH-SEARCH-INTL-NON%20BRAND-LATAM-YOGA-PILATES&utm_content=yoga-exact&utm_term=yoga&msclkid=24aaee4ed50e1399b6d88be0a0f417ba
+
+*/
+
 /* Transiciones */
 .transicion {
     opacity: 0; /* Empieza con opacidad 0 */
@@ -71,6 +77,9 @@ section {
 }
 
 /*Barra Navegacion*/
+.logo-movil {
+    display: none;
+}
 .navbar {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -98,57 +107,9 @@ section {
     padding: 0px 12px;
 }
 
-/*Sobre nosotros*/
-.sobre-nosotros {
-    display: flex;
-    align-items: self-end;
-    justify-content: self-end;
-
-    margin: 30px 30px 0px 30px;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra difuminada alrededor de la sección */
-    padding: 20px 20px 10px 20px; /* Añade relleno para resaltar el difuminado */
-}
-.sobre-nosotros .row {
-    margin-bottom: 10px;
-}
-.sobre-nosotros .imagen {
-    background-image: url('imagenes/R.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px; /* Ajusta la altura según sea necesario */
-}
-.sobre-nosotros .info {
-    background-color: #ffbc58;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 600px;
-}
-.sobre-nosotros img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-.titulo p {
-    margin-bottom: 40px;
-}
-.texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.texto p {
-    margin: 0px 20px;
-    width: 75%;
-}
-
 /*Experiencia*/
 .experiencia {
-    padding: 40px 40px 60px 40px;
+    padding: 20px 40px 60px 40px;
 }
 .experiencia-info {
     margin: 40px 0;
@@ -202,6 +163,55 @@ section {
     margin: 5px;
 }
 
+
+/*Sobre nosotros*/
+.sobre-nosotros {
+    display: flex;
+    align-items: self-end;
+    justify-content: self-end;
+
+    margin: 10px 30px 50px 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra difuminada alrededor de la sección */
+    padding: 20px 20px 10px 20px; /* Añade relleno para resaltar el difuminado */
+}
+.sobre-nosotros .row {
+    margin-bottom: 10px;
+}
+.sobre-nosotros .imagen {
+    background-image: url('imagenes/R.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px; /* Ajusta la altura según sea necesario */
+}
+.sobre-nosotros .info {
+    background-color: #ffbc58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+}
+.sobre-nosotros img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.titulo p {
+    margin-bottom: 40px;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto p {
+    margin: 0px 20px;
+    width: 75%;
+}
+
 /*Profesores*/
 .profesores {
     padding: 10px;
@@ -209,6 +219,9 @@ section {
     margin: 10px 30px 30px 30px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra difuminada alrededor de la sección */
     padding: 20px; /* Añade relleno para resaltar el difuminado */
+}
+.profesores .seccion-descripcion {
+    font-size: 1.8rem;
 }
 .profesores .carousel {
     max-width: 1000px;
@@ -225,8 +238,8 @@ section {
     justify-content: center;
 }
 .profesores-imagen {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: 10px 10px 20px 10px;
 }
 .profesores-texto {
@@ -262,6 +275,17 @@ section {
 .preguntas .accordion-button {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+/*Certificados*/
+.certificaciones {
+    margin-bottom: 30px;
+}
+.certificaciones .seccion-descripcion {
+    font-size: 1rem;
+}
+.certificaciones .seccion-titulo {
+    font-size: 1.4rem;
 }
 
 /*Mapa*/
@@ -391,6 +415,9 @@ footer {
     }
 
     /*Barra de navegación*/
+    .logo-movil {
+        display: block;
+    }
     .navbar {
         margin-top: -900px;
         margin-bottom: 850px;
@@ -407,6 +434,20 @@ footer {
         display: none;
     }
 
+    /*Experiencia*/
+    .seccion-descripcion {
+        font-size: 1.2rem;
+    }
+    .experiencia {
+        margin-top: -40px;
+        padding: 0px 20px 60px 20px;
+    }
+    .experiencia-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
     /*Sobre Nosotros*/
     .sobre-nosotros {
         margin: 0;
@@ -419,27 +460,26 @@ footer {
     .sobre-nosotros .row {
         margin-bottom: 8px;
     }
-
-    /*Experiencia*/
-    .experiencia {
-        padding: 40px 20px 60px 20px;
-    }
-    .experiencia-info h3 {
-        font-size: 1.4rem;
-        margin-bottom: 20px;
-        width: 100%;
+    .sobre-nosotros .info {
+        height: 450px;
     }
 
     /*Profesores*/
     .profesores {
         margin: 10px 10px 30px 10px;
     }
+    .profesores .seccion-descripcion {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
     .profesores .carousel {
         max-width: 100%;
     }
-    .profesores-imagen {
-        height: 350px;
-        width: 350px;
+    .profesores img {
+        height: 230px;
+        width: 230px;
     }
     .profesores-texto {
         max-width: 90%;
@@ -453,25 +493,22 @@ footer {
 
     /*Preguntas Frecuentes*/
     .preguntas h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .preguntas h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 20px;
+    }
+
+    /*Certificaciones*/
+    .certificaciones {
+        margin-top: -30px;
+        margin-bottom: 30px;
     }
 
     /*footer*/
     .footer img {
         margin-top: 40px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .profesores-imagen {
-        height: 120px;
-        width: 120px;
-    }
-    .profesores-texto {
-        font-size: 18px;
     }
 }
 @media screen and (min-width: 700px) {
